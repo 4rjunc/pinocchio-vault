@@ -4,7 +4,7 @@ use pinocchio_system::instructions::Transfer;
 
 pub const LAMPORTS: u64 = 1_000_000_000;
 
-use crate::state::{load_ix_data, DataLen};
+use crate::states::{load_ix_data, DataLen};
 
 #[repr(C)]
 pub struct DepositData {

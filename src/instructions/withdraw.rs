@@ -2,11 +2,12 @@ use pinocchio::{
     account_info::AccountInfo,
     instruction::{Seed, Signer},
     program_error::ProgramError,
-    pubkey, ProgramResult,
+    pubkey::{self},
+    ProgramResult,
 };
 use pinocchio_system::instructions::Transfer;
 
-use crate::error::MyProgramError;
+use crate::errors::MyProgramError;
 
 pub fn process_withdraw(accounts: &[AccountInfo], data: &[u8]) -> ProgramResult {
     let [withtdraw_account, vault_account, _system_program] = accounts else {
