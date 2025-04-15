@@ -25,11 +25,11 @@ pub fn process_instruction(
 
     match VaultInstructions::try_from(discriminator_variant)? {
         VaultInstructions::Deposit => {
-            log!("Ix:0");
+            log!("Deposit");
             instructions::process_deposit(accounts, instruction_data)?;
         }
         VaultInstructions::Withdraw => {
-            log!("Ix:1");
+            log!("Withdraw");
             instructions::process_withdraw(accounts, instruction_data)?;
         }
     }
