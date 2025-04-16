@@ -1,6 +1,6 @@
 # Solana Pinocchio Vault Program
 
-## Steps to start (Please use wsl or linux for smooth devex)
+## Steps to start 
 
 ### 1. clone the repo
 
