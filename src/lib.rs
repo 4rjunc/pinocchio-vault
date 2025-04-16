@@ -1,4 +1,4 @@
-#![feature(const_mut_refs)]
+//#![feature(const_mut_refs)]
 #![no_std]
 
 #[cfg(not(feature = "no-entrypoint"))]
